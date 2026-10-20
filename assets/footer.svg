@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="168" viewBox="0 0 800 168" role="img" aria-labelledby="t d">
+<title id="t">Session closed</title><desc id="d">Terminal footer: exit, session closed, connection closed.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#04070d"/><stop offset="1" stop-color="#0a1424"/></linearGradient>
+<linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff" stop-opacity="0"/><stop offset=".25" stop-color="#00e5ff"/><stop offset=".75" stop-color="#2979ff"/><stop offset="1" stop-color="#9d5cff" stop-opacity="0"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#00e5ff" stroke-opacity=".07"/></pattern>
+<filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<style>
+text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono','DejaVu Sans Mono',monospace}
+.fade{animation:fade .7s ease-out both}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.blink{animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.glitch{animation:glitch 6s infinite}
+@keyframes glitch{0%,90%,100%{transform:translate(0,0)}92%{transform:translate(-4px,1px)}94%{transform:translate(4px,-1px)}96%{transform:translate(-2px,0)}}
+.pulse{animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35}}
+.scan{animation:scan 5s linear infinite}
+@keyframes scan{from{transform:translateY(0)}to{transform:translateY(var(--sh,300px))}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect width="800" height="168" rx="10" fill="url(#bg)"/><rect width="800" height="168" rx="10" fill="url(#grid)"/><rect x=".5" y=".5" width="799" height="167" rx="10" fill="none" stroke="#14324d"/><text x="32" y="44" font-size="16" fill="#39ff96" font-weight="bold" text-anchor="start" >saber@digital-world:~$</text><text x="267.70000000000005" y="44" font-size="16" fill="#00e5ff" font-weight="bold" text-anchor="start" >exit</text><g class="fade" style="animation-delay:0.5s"><text x="32" y="76" font-size="15" fill="#7f97b3" font-weight="normal" text-anchor="start" >logout</text></g><g class="fade" style="animation-delay:1.1s"><text x="32" y="100" font-size="15" fill="#d6e6f5" font-weight="normal" text-anchor="start" >[ session closed ] thanks for visiting the digital world.</text></g><g class="fade" style="animation-delay:1.7s"><text x="32" y="124" font-size="15" fill="#7f97b3" font-weight="normal" text-anchor="start" >Connection to digital-world closed.</text></g><text x="32" y="154" font-size="16" fill="#39ff96" font-weight="bold" text-anchor="start" >$</text><rect class="blink" x="50" y="140" width="9" height="16" fill="#00e5ff"/><rect x="32" y="146" width="736" height="2" fill="url(#neon)"/><text x="768" y="44" font-size="12" fill="#7f97b3" font-weight="normal" text-anchor="end" >SABER://DIGITAL-WORLD</text>
+</svg>

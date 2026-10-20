@@ -1,0 +1,5 @@
+# Original photo + intermediate embed image used only to (re)build assets locally.
+# Remove this line if you deliberately want the source photo in the public repository.
+scripts/source/
+__pycache__/
+*.pyc
